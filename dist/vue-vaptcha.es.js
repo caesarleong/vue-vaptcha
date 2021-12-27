@@ -29,27 +29,27 @@ var script = {
   props: {
     vid: {
       type: String,
-      default: ""
+      "default": ""
     },
     type: {
       type: String,
-      default: "click"
+      "default": "click"
     },
     scene: {
       type: String,
-      default: ""
+      "default": ""
     },
     vpStyle: {
       type: String,
-      default: ""
+      "default": ""
     },
     color: {
       type: String,
-      default: ""
+      "default": ""
     },
     lang: {
       type: String,
-      default: ""
+      "default": ""
     }
   },
   data: function data() {
@@ -239,38 +239,154 @@ var __vue_render__ = function() {
   var _vm = this;
   var _h = _vm.$createElement;
   var _c = _vm._self._c || _h;
-  return _c("div", { ref: "vaptcha" }, [_vm._m(0)])
-};
-var __vue_staticRenderFns__ = [
-  function() {
-    var _vm = this;
-    var _h = _vm.$createElement;
-    var _c = _vm._self._c || _h;
-    return _c("div", { staticClass: "vaptcha-init-main" }, [
+  return _c("div", { ref: "vaptcha" }, [
+    _c("div", { staticClass: "vaptcha-init-main" }, [
       _c("div", { staticClass: "vaptcha-init-loading" }, [
-        _c(
-          "a",
-          { attrs: { href: "https://www.vaptcha.com/", target: "_blank" } },
-          [
-            _c("img", {
-              attrs: { src: "https://cdn.vaptcha.com/vaptcha-loading.gif" }
-            })
-          ]
-        ),
+        _c("a", { attrs: { href: "/", target: "_blank" } }, [
+          _c(
+            "svg",
+            {
+              staticStyle: {
+                "enable-background": "new 0 0 50 50",
+                width: "14px",
+                height: "14px",
+                "vertical-align": "middle"
+              },
+              attrs: {
+                xmlns: "http://www.w3.org/2000/svg",
+                "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                width: "48px",
+                height: "60px",
+                viewBox: "0 0 24 30",
+                "xml:space": "preserve"
+              }
+            },
+            [
+              _c(
+                "rect",
+                {
+                  attrs: {
+                    x: "0",
+                    y: "9.22656",
+                    width: "4",
+                    height: "12.5469",
+                    fill: "#CCCCCC"
+                  }
+                },
+                [
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "height",
+                      attributeType: "XML",
+                      values: "5;21;5",
+                      begin: "0s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "y",
+                      attributeType: "XML",
+                      values: "13; 5; 13",
+                      begin: "0s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "rect",
+                {
+                  attrs: {
+                    x: "10",
+                    y: "5.22656",
+                    width: "4",
+                    height: "20.5469",
+                    fill: "#CCCCCC"
+                  }
+                },
+                [
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "height",
+                      attributeType: "XML",
+                      values: "5;21;5",
+                      begin: "0.15s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "y",
+                      attributeType: "XML",
+                      values: "13; 5; 13",
+                      begin: "0.15s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "rect",
+                {
+                  attrs: {
+                    x: "20",
+                    y: "8.77344",
+                    width: "4",
+                    height: "13.4531",
+                    fill: "#CCCCCC"
+                  }
+                },
+                [
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "height",
+                      attributeType: "XML",
+                      values: "5;21;5",
+                      begin: "0.3s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("animate", {
+                    attrs: {
+                      attributeName: "y",
+                      attributeType: "XML",
+                      values: "13; 5; 13",
+                      begin: "0.3s",
+                      dur: "0.6s",
+                      repeatCount: "indefinite"
+                    }
+                  })
+                ]
+              )
+            ]
+          )
+        ]),
         _vm._v(" "),
         _c("span", { staticClass: "vaptcha-text" }, [
-          _vm._v("VAPTCHA启动中...")
+          _vm._v("Vaptcha启动中...")
         ])
       ])
     ])
-  }
-];
+  ])
+};
+var __vue_staticRenderFns__ = [];
 __vue_render__._withStripped = true;
 
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-5dd09e92_0", { source: ".vaptcha-init-main {\n  display: table;\n  width: 100%;\n  height: 100%;\n  min-height: 36px;\n  background-color: #eeeeee;\n}\n.vaptcha-init-main .vaptcha-init-loading {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\n.vaptcha-init-main .vaptcha-init-loading a {\n  display: inline-block;\n  width: 18px;\n  height: 18px;\n}\n.vaptcha-init-main .vaptcha-init-loading a img {\n  vertical-align: middle;\n}\n.vaptcha-init-main .vaptcha-init-loading .vaptcha-text {\n  font-family: sans-serif;\n  font-size: 12px;\n  color: #cccccc;\n  vertical-align: middle;\n}\n", map: {"version":3,"sources":["Vaptcha.vue"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,yBAAyB;AAC3B;AACA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;AACpB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;AACd;AACA;EACE,sBAAsB;AACxB;AACA;EACE,uBAAuB;EACvB,eAAe;EACf,cAAc;EACd,sBAAsB;AACxB","file":"Vaptcha.vue","sourcesContent":[".vaptcha-init-main {\n  display: table;\n  width: 100%;\n  height: 100%;\n  min-height: 36px;\n  background-color: #eeeeee;\n}\n.vaptcha-init-main .vaptcha-init-loading {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\n.vaptcha-init-main .vaptcha-init-loading a {\n  display: inline-block;\n  width: 18px;\n  height: 18px;\n}\n.vaptcha-init-main .vaptcha-init-loading a img {\n  vertical-align: middle;\n}\n.vaptcha-init-main .vaptcha-init-loading .vaptcha-text {\n  font-family: sans-serif;\n  font-size: 12px;\n  color: #cccccc;\n  vertical-align: middle;\n}\n"]}, media: undefined });
+    inject("data-v-44931ac5_0", { source: ".vaptcha-init-main {\n  display: table;\n  width: 100%;\n  height: 100%;\n  min-height: 36px;\n  background-color: #eeeeee;\n}\n.vaptcha-init-main .vaptcha-init-loading {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\n.vaptcha-init-main .vaptcha-init-loading a {\n  display: inline-block;\n  width: 18px;\n  height: 18px;\n}\n.vaptcha-init-main .vaptcha-init-loading a img {\n  vertical-align: middle;\n}\n.vaptcha-init-main .vaptcha-init-loading .vaptcha-text {\n  font-family: sans-serif;\n  font-size: 12px;\n  color: #cccccc;\n  vertical-align: middle;\n}\n", map: {"version":3,"sources":["Vaptcha.vue"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,yBAAyB;AAC3B;AACA;EACE,mBAAmB;EACnB,sBAAsB;EACtB,kBAAkB;AACpB;AACA;EACE,qBAAqB;EACrB,WAAW;EACX,YAAY;AACd;AACA;EACE,sBAAsB;AACxB;AACA;EACE,uBAAuB;EACvB,eAAe;EACf,cAAc;EACd,sBAAsB;AACxB","file":"Vaptcha.vue","sourcesContent":[".vaptcha-init-main {\n  display: table;\n  width: 100%;\n  height: 100%;\n  min-height: 36px;\n  background-color: #eeeeee;\n}\n.vaptcha-init-main .vaptcha-init-loading {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\n.vaptcha-init-main .vaptcha-init-loading a {\n  display: inline-block;\n  width: 18px;\n  height: 18px;\n}\n.vaptcha-init-main .vaptcha-init-loading a img {\n  vertical-align: middle;\n}\n.vaptcha-init-main .vaptcha-init-loading .vaptcha-text {\n  font-family: sans-serif;\n  font-size: 12px;\n  color: #cccccc;\n  vertical-align: middle;\n}\n"]}, media: undefined });
 
   };
   /* scoped */
